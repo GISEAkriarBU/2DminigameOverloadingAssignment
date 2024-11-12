@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        speed = 500f;
-        jumpSpeed = 15f;
+        speed = 100f;
+        jumpSpeed = 4f;
     }
 
     void Update()
@@ -29,6 +29,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //rb2d.velocity = new Vector2(moveX * speed * Time.fixedDeltaTime, rb2d.velocity.y);
+        rb2d.velocity = new Vector2(moveX * speed * Time.fixedDeltaTime, rb2d.velocity.y);
     }
 }
